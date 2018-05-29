@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  AugustusFM
+//
+//  Created by dllo on 16/7/13.
+//  Copyright © 2016年 dllo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//宏定义   角度转弧度
+#define AngleToRadian(x) (x/180.0*M_PI)
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define MAS_SHORTHAND         // 1.对于约束参数可以省去"mas_"
+#define MAS_SHORTHAND_GLOBALS // 2.对于默认的约束参数自动装箱
+#define lFitWidth ScreenWidth / 414    //适应宽度
+#define lFitHeight ScreenHeight / 736  //适应高度
+#import <Masonry.h>
+#endif /* PrefixHeader_pch */
